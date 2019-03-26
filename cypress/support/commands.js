@@ -27,7 +27,7 @@
 Cypress.Commands.add('loginByUI', () => {
     cy.visit('http://demo.redmine.org/')
     cy.get('a.login').click()
-    cy.get('#username').type('user1')
+    cy.get('#username').type('userTest')
     cy.get('#password').type('pass')
     cy.get('input[name=login]').click()
     cy.get('#loggedas').should('contain', 'Ligado como')
